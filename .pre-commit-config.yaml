@@ -22,7 +22,6 @@ repos:
   - id: black
     exclude: |
       (?x)
-        ^docs/|
         ^src/pip/_internal/commands|
         ^src/pip/_internal/index|
         ^src/pip/_internal/models|
@@ -67,7 +66,7 @@ repos:
   rev: v0.800
   hooks:
   - id: mypy
-    exclude: docs|tests
+    exclude: tests
     args: ["--pretty"]
     additional_dependencies: ['nox==2020.12.31']
 
